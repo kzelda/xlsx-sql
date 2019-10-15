@@ -1,0 +1,29 @@
+{
+  "name": "xlsx-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+
+  "author": "kzelda",
+	"description": "Export excel (*.xlsx) to SQL inserts",
+	"keywords": [
+		"excel",
+		"xlsx",
+		"sql"
+	],
+		"repository": {
+		"type": "git",
+		"url": "git://github.com/kzelda/xlsx-sql.git"
+	},
+	"homepage": "https://github.com/kzelda/xlsx-sql",
+	"bugs": {
+		"url": "https://github.com/kzelda/xlsx-sql/issues"
+  },
+  
+  "dependencies": {
+    "node-xlsx": "^0.15.0"
+  },
+  "scripts": {
+    "run:xlsx-sql": "node ./src/examples/export_sql/app.js"
+  }
+}
