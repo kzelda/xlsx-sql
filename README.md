@@ -1,9 +1,16 @@
 # xlsx-sql
 
-## Example : Export xlsx to sql
+## Installation
+```bash
+yarn add xlsx-sql
+# or using npm
+npm install xlsx-sql
+```
+
+## Examples
 
 ```js
-var lib = require("../../lib");
+const xlsx = require("xlsx-sql");
 
-lib.Sql(`${__dirname}/file1.xlsx` , `${__dirname}/Script_${Math.random()}.sql`);
+xlsx.Sql(`${__dirname}/file1.xlsx` , `${__dirname}/Script_${Math.random()}.sql`);
 ```
