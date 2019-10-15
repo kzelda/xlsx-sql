@@ -1,7 +1,7 @@
 {
 	"name": "xlsx-sql",
 	"version": "1.0.0",
-	"main": "lib/index.js",
+	"main": "src/lib/index.js",
 	"license": "MIT",
 	"author": "kzelda",
 	"description": "Export excel (*.xlsx) to SQL inserts",
