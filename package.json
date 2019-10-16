@@ -1,6 +1,6 @@
 {
 	"name": "xlsx-sql",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"main": "src/lib/index.js",
 	"license": "MIT",
 	"author": "kzelda",
