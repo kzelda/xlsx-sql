@@ -12,7 +12,10 @@ if (argv.length == 2) {
 
 var args = argv.slice(2);
 var xlsx_file = args[0];
-var sql_file = args.length == 1 ? `_Script${Math.random()}.sql` : args[1];
+var sql_file = args.length == 1 ? `${__dirname}/_Script${Math.random()}.sql` : args[1];
+
+console.log("Writing to : ",sql_file);
+
 
 fs.exists(xlsx_file,exists => {
     if(!exists){
