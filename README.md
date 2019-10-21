@@ -4,8 +4,10 @@
 ## Without installing (using [npx](https://github.com/npm/npx))
 ```bash
 npx xlsx-sql [xlsx_file] [sql_file]
-# windows example
+# example 1
 npx xlsx-sql "c:\tmp\file.xlsx" "c:\tmp\script.sql"
+# example 2 (only xlsx file)
+npx xlsx-sql "c:\tmp\file.xlsx"
 ```
 
 OR
@@ -16,7 +18,7 @@ yarn global add xlsx-sql
 # or using npm
 npm install -g xlsx-sql
 # you can now use it like
-xlsx-sql [xlsx_file] [sql_file]
+xlsx-sql xlsx_filename [optional_sql_filename]
 ```
 
 OR
