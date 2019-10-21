@@ -24,6 +24,7 @@
 	},
 	"scripts": {
 		"run:xlsx-sql": "node ./src/examples/export_sql/app.js",
-		"run:bin-index": "node ./bin/index.js \"C:\\Solutions\\xlsx-sql\\src\\examples\\export_sql\\file1.xlsx\""
+		"run:bin-index": "node ./bin/index.js \"C:\\Solutions\\xlsx-sql\\src\\examples\\export_sql\\file1.xlsx\"",
+		"run:version": "node ./bin/index.js --version"
 	}
 }

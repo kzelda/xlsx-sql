@@ -5,10 +5,23 @@ var fs = require("fs");
 var path = require("path");
 
 var argv = process.argv;
+var version = require("../package.json").version;
+
+
+
+
 
 if (argv.length == 2) {
     console.warn('xlsx-sql xlsx_filename [optional_sql_filename]');
     process.exit(1);
+}
+
+if (argv.length == 3) {
+    var arg3 = argv[2].toString().toLowerCase();
+
+    if(arg3 == "-v" || arg3 == "--version")
+    console.log(`xlsx-sql version : ${version}`);
+    process.exit(0);
 }
 
 console.log(JSON.stringify(process.argv,null,'\t'));
