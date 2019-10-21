@@ -9,10 +9,11 @@ var Data = function Data(xlsx_path) {
 };
 
 /**
- * 
+ * Export xslx_file to sql file
  * @param {string} xlsx_file Xlsx file path
  * @param {string} sql_file Sql script path
  * @param {string} sql_dialect sqlserver | mysql | postgres
+ * @returns number of affected rows
  */
 var Sql = function Sql(xlsx_file, sql_file, sql_dialect) {
 
@@ -84,9 +85,14 @@ CREATE TABLE [${tablename}](
         append_file(`INSERT INTO ${tablename} VALUES(${q_values})\r\n`);
     }
 
-    append_file("\r\n".repeat(3) + `-- Count =  ${data.length -1}`);
+    var imported_rows = data.length -1;
+
+    append_file("\r\n".repeat(3) + `-- Count =  ${imported_rows}`);
 
     append_file(`\r\nSELECT COUNT(*) FROM ${tablename}`);
+
+    return imported_rows;
+
 }
 
 exports.Data = Data;
