@@ -24,6 +24,6 @@
 	},
 	"scripts": {
 		"run:xlsx-sql": "node ./src/examples/export_sql/app.js",
-		"run:bin-index": "node ./bin/index.js \"C:\\Solutions\\xlsx-sql\\src\\examples\\export_sql\\file4.xlsx\" _Script.sql"
+		"run:bin-index": "node ./bin/index.js \"C:\\Users\\k.boubakir\\Documents\\My Downloads\\Activité des commerciaux (licences).xlsx\" _Script.sql"
 	}
 }
