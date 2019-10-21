@@ -19,16 +19,18 @@ if (argv.length == 2) {
 if (argv.length == 3) {
     var arg3 = argv[2].toString().toLowerCase();
 
-    if(arg3 == "-v" || arg3 == "--version")
-    console.log(`xlsx-sql version : ${version}`);
-    process.exit(0);
+    if(arg3 == "-v" || arg3 == "--version"){
+        console.log(`v${version}`);
+        process.exit(0);
+    }    
 }
 
-console.log(JSON.stringify(process.argv,null,'\t'));
+//console.log(JSON.stringify(process.argv,null,'\t'));
 
 var args = argv.slice(2);
 var xlsx_file = args[0];
-var sql_file = args.length == 1 ? path.resolve(__dirname,`_Script${Math.random()}.sql`)  : args[1];
+var sql_file = args.length == 1 ? path.resolve(path.dirname(xlsx_file),`_Script${Math.random()}.sql`)  : args[1];
+
 
 fs.exists(xlsx_file,exists => {
     if(!exists){
