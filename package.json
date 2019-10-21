@@ -1,9 +1,10 @@
 {
 	"name": "xlsx-sql",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"main": "src/lib/index.js",
 	"license": "MIT",
 	"author": "kzelda",
+	"bin": "./bin/index.js",
 	"description": "Export excel (*.xlsx) to SQL inserts",
 	"keywords": [
 		"excel",
@@ -22,6 +23,7 @@
 		"node-xlsx": "^0.15.0"
 	},
 	"scripts": {
-		"run:xlsx-sql": "node ./src/examples/export_sql/app.js"
+		"run:xlsx-sql": "node ./src/examples/export_sql/app.js",
+		"run:bin-index": "node ./bin/index.js \"C:\\Solutions\\xlsx-sql\\src\\examples\\export_sql\\file4.xlsx\" _Script.sql"
 	}
 }

@@ -1,9 +1,5 @@
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
 var xlsx = require('node-xlsx').default;
 var fs = require("fs");
 
