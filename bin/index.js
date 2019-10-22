@@ -3,16 +3,12 @@
 var lib = require("../src/lib");
 var fs = require("fs");
 var path = require("path");
-
 var argv = process.argv;
 var version = require("../package.json").version;
 
 
-
-
-
 if (argv.length == 2) {
-    console.warn('xlsx-sql xlsx_filename [optional_sql_filename]');
+    console.warn('xlsx-sql <xlsx_filename> [optional_sql_filename]');
     process.exit(1);
 }
 
