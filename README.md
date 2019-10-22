@@ -3,7 +3,7 @@
 
 ## Without installing (using [npx](https://github.com/npm/npx))
 ```bash
-npx xlsx-sql [xlsx_file] [sql_file]
+npx xlsx-sql <xlsx_file> [optional_sql_file]
 # example 1
 npx xlsx-sql "c:\tmp\file.xlsx" "c:\tmp\script.sql"
 # example 2 (only xlsx file)
